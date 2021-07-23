@@ -23,8 +23,8 @@ verbose= TRUE
 
 ## Lines to read the new stratification data table to be used in RoMEBS
   ### modify the folder path in next line  ###
-  str <- read.table("D:\\Documents and Settings\\Utente\\Documenti\\GitHub\\RoMEBS\\data\\Bulgaria\\2021-04-16\\Tables\\Stratification.csv", sep=";", header=TRUE)
-  str <- str[str$COUNTRY=="BGR",]
+  str <- read.table("D:\\Documents and Settings\\Utente\\Documenti\\GitHub\\BioIndex\\R_BioIndex_3.1\\input\\Turchia Est\\Stratification.csv", sep=";", header=TRUE)
+  str <- str[str$COUNTRY=="TUE",]
 
 # Run RoMEBS
 RoMEBS(DataTA, DataTB,DataTC,DataTE,DataTL,
