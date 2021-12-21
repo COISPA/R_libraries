@@ -1,6 +1,6 @@
 ### Install RoMEBS packages and dependencies ###
 library(tools)
-install.packages("https://github.com/COISPA/R_libraries/raw/main/RoMEBS_0.2.01.zip", repos=NULL)
+install.packages("https://github.com/COISPA/R_libraries/raw/main/RoMEBS_0.2.02.zip", repos=NULL)
 packages <- c("svDialogs","MEDITS","timeDate","stringr","maps","sp","tcltk","ggplot2","rnaturalearth","rnaturalearthdata")
 install.packages(setdiff(packages, rownames(installed.packages())))
 library(RoMEBS)
@@ -17,7 +17,7 @@ verbose= TRUE
   DataTA = read.table(tcltk::tclvalue(tcltk::tkgetOpenFile(filetypes = "{ {CSV Files} {.csv} }",title="Select TA file")),sep=";",header = T)
   DataTB = read.table( tcltk::tclvalue(tcltk::tkgetOpenFile(filetypes = "{ {CSV Files} {.csv} }",title="Select TB file")),sep=";",header = T)
   DataTC = read.table(tcltk::tclvalue(tcltk::tkgetOpenFile(filetypes = "{ {CSV Files} {.csv} }",title="Select TC file")),sep=";",header = T)
-  DataTE = NA     # read.table(tcltk::tclvalue(tcltk::tkgetOpenFile(filetypes = "{ {CSV Files} {.csv} }",title="Select TE file")),sep=";",header = T)
+  DataTE = read.table(tcltk::tclvalue(tcltk::tkgetOpenFile(filetypes = "{ {CSV Files} {.csv} }",title="Select TE file")),sep=";",header = T)
   DataTL = NA     # read.table(tcltk::tclvalue(tcltk::tkgetOpenFile(filetypes = "{ {CSV Files} {.csv} }",title="Select TL file")),sep=";",header = T)
 
 ## Run RoMEBS function ##
