@@ -1,6 +1,6 @@
 ### Install RoMEBS packages and dependencies ###
 library(tools)
-install.packages("https://github.com/COISPA/R_libraries/raw/main/RoMEBS_0.2.01.zip", repos=NULL)
+install.packages("https://github.com/COISPA/R_libraries/raw/main/RoMEBS_0.2.02.zip", repos=NULL)
 packages <- c("svDialogs","MEDITS","timeDate","stringr","maps","sp","tcltk","ggplot2","rnaturalearth","rnaturalearthdata")
 install.packages(setdiff(packages, rownames(installed.packages())))
 library(RoMEBS)
